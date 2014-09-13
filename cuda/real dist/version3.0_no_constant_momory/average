@@ -1,0 +1,22 @@
+#!/usr/bin/python
+
+import linecache
+import math
+import os
+
+
+
+f1=open("abc.txt","r")
+x=f1.readlines()
+
+count=0
+ex=0
+ey=0
+for i in range(1600,2000):
+
+	ex=ex+float(x[i][4:19])
+	ey=ey+float(x[i][25:40])
+	count=count+1
+	
+
+print ex/count,ey/count
